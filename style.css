@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0275db;
+}
+
+.logo::first-letter {
+  font-size: 40px;
+  border: 2px solid #0275db;
+  border-right: transparent;
+  padding-left: 5px;
+  color: #ff5733;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff5733;
+}
+
+nav ul li a::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  position: absolute;
+  height: 3px;
+  background-color: #ff5733;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  color: #131313;
+  background-color: #ff5733;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  border: 2px solid #ff5733;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #ff5733;
+}
+
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.content h1 {
+  color: #1f1f25;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+.content h1 span {
+  color: #ff5733;
+}
+
+.content p {
+  color: #1f1f25;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.image {
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+.image img {
+  display: block;
+  width: 80%;
+  height: 550px;
+}
